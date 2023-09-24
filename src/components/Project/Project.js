@@ -12,7 +12,7 @@ export default function Project(props) {
                                 {project.title}
                             </p>
                             <button className="github">
-                                <a href={project.repo}>
+                                <a href={project.repo} target="blank" rel="noopener noreferrer">
                                     <figure className="image is-24x24">
                                         <img src={process.env.PUBLIC_URL + project.icon} alt="Github Logo" />
                                     </figure>
@@ -20,7 +20,7 @@ export default function Project(props) {
                             </button>
                         </div>
                         <div className="card-image">
-                            <a href={project.deployed}>
+                            <a href={project.deployed}  target="blank" rel="noopener noreferrer">
                                 <figure className="image is-4by3">
                                     <img src={process.env.PUBLIC_URL + project.image} alt="Screenshot of App" />
                                 </figure>

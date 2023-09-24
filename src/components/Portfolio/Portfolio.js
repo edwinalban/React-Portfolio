@@ -5,8 +5,6 @@ import "./Portfolio.css";
 const projects = [
     {
         title: "Social Whiskers Pet Adoption",
-        languages: "HTML, Javascript, Handlebars",
-        packages: "Express, Bcrypt, Sequelize, Predictionary, Bootstrap",
         image: "/images/social-whiskers.png",
         repo: "https://github.com/edwinalban/Social-Whiskers-Pet-Adoption",
         deployed: "https://social-whiskers-ad907fdaaf47.herokuapp.com/",
@@ -14,8 +12,6 @@ const projects = [
     },
     {
         title: "What's On Hand",
-        languages: "HTML, Javascript, CSS",
-        packages: "Materialize",
         image: "/images/whats-on-hand.png",
         repo: "https://github.com/edwinalban/Whats_On_Hand_Cocktail_Search",
         deployed: "https://quagsire369.github.io/Whats_On_Hand_Cocktail_Search/",
@@ -23,8 +19,6 @@ const projects = [
     },
     {
         title: "Coding Quiz",
-        languages: "HTML, Javascript, CSS",
-        packages: "none",
         image: "/images/coding-quiz.png",
         repo: "https://github.com/edwinalban/Coding-Quiz-Challenge",
         deployed: "https://edwinalban.github.io/Coding-Quiz-Challenge/index.html",
@@ -32,8 +26,6 @@ const projects = [
     },
     {
         title: "Note Taker",
-        languages: "HTML, Javascript, CSS",
-        packages: "Express",
         image: "/images/note-taker.png",
         repo: "https://github.com/edwinalban/Note-Taker",
         deployed: "https://basic-note-taker-1ebef20d0f5f.herokuapp.com",
@@ -41,8 +33,6 @@ const projects = [
     },
     {
         title: "Weather Forecast",
-        languages: "HTML, Javascript, CSS",
-        packages: "none",
         image: "/images/weather-forecast.png",
         repo: "https://github.com/edwinalban/Weather-Forecast",
         deployed: "https://edwinalban.github.io/Weather-Forecast/",
@@ -50,8 +40,6 @@ const projects = [
     },
     {
         title: "Day Planner",
-        languages: "HTML, Javascript, CSS",
-        packages: "none",
         image: "/images/day-planner.png",
         repo: "https://github.com/edwinalban/Day-Planner",
         deployed: "https://edwinalban.github.io/Day-Planner/",
