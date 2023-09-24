@@ -14,33 +14,33 @@ export default function Header() {
             case "About":
                 return <About />;
 
-            case "Portfolio":
-                return <Portfolio />;
-                
-            case "Contact":
-                return <Contact />;
-                
-            case "Resume":
-                return <Resume />;
-                
-            default:
-                return <About />;
+            // case "Portfolio":
+            //     return <Portfolio />;
+
+            // case "Contact":
+            //     return <Contact />;
+
+            // case "Resume":
+            //     return <Resume />;
+
+            // default:
+            //     return <About />;
         }
     }
 
     return (
         <>
-            <nav className="navbar" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-flex" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <p className="navbar-item is-justify-content-flex-start">
-                        <span className="content is-large">Edwin Alban</span>
+                    <p className="navbar-item content is-large">
+                        Edwin Alban
                     </p>
                 </div>
             </nav>
-            <Navigation
-                currentView={currentView}
-                setCurrentView={setCurrentView}
-            />
+                <Navigation
+                    currentView={currentView}
+                    setCurrentView={setCurrentView}
+                />           
             <main>
                 <div>{renderView(currentView)}</div>
             </main>

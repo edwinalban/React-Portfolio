@@ -2,20 +2,22 @@ import React from "react";
 import './Navigation.css';
 
 export default function Navigation(props) {
-    const links = ["About Me", "Portfolio", "Contact", "Resume"]
+    const links = ["About", "Portfolio", "Contact", "Resume"]
     return (
-        <div className="links is-flex-direction-row">
-            <ul className="is-justify-content-flex-end">
+        <div className="tabs is-right">
+            <ul>
                 {links.map((link) => (
                     <li className={props.currentView === link ? "nav-item is-active" : "nav-item"} key={link}>
                         <a
                             href={"#" + link.toLowerCase()}
                             onClick={() => props.setCurrentView(link)}
-                            className={props.currentView === link ? "nav-link is-active" : "nav-link"}
-                        ></a>
+                            className={props.currentView === link ? "nav-link active" : "nav-link"}
+                        >
+                            {link}
+                        </a>
                     </li>
                 ))}
             </ul>
         </div>
     )
-}
+};
