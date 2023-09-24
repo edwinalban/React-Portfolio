@@ -25,31 +25,23 @@ export default function Contact() {
     }
 
     const handleEmailChange = (e) => {
-        const { email, value } = e.target;
-        console.log(value);
+        const { name, value } = e.target;
 
         const isValid = validateEmail(value);
-        console.log(isValid);
 
-        if (!isValid) {
+        if (!value) {
+            setEmailError("This field is required. Please enter an email.");
+        } else if (!isValid) {
             setEmailError("This is not a valid email address.");
         } else {
             setEmailError("");
         }
 
-        if (!value) {
-            setEmailError("This field is required. Please enter an email.");
-        }
-
-        if (value) {
-            setEmailError("");
-        }
-
-        return email === setEmail(value);
+        return name === setEmail(value);
     }
 
     const handleMessageChange = (e) => {
-        const { message, value } = e.target;
+        const { name, value } = e.target;
 
         if (!value) {
             setMessageError("This field is required. Please enter a message.");
@@ -59,7 +51,7 @@ export default function Contact() {
             setMessageError("");
         }
 
-        return message === setMessage(value);
+        return name === setMessage(value);
     }
 
     const handleSubmit = (e) => {
