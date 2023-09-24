@@ -5,7 +5,7 @@ export default function Project(props) {
     return (
         <div className="columns is-flex-wrap-wrap is-flex-direction-row">
             {props.projects.map((project) => (
-                <div className="column is-one-third">
+                <div className="column is-one-third" key={project.title}>
                     <div className="card">
                         <div className="card-header">
                             <p className="card-header-title">
