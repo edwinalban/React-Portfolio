@@ -3,16 +3,16 @@ import React from "react";
 export default function Resume() {
     return (
         <div>
-            <p className="content is-large has-text-centered">Resume</p>
-            <p>
+            <p className="content is-large has-text-centered has-text-weight-bold">Resume</p>
+            <p className="has-text-weight-semibold">
                 Click to download:
-                <a href="" download>
+                <a href={process.env.PUBLIC_URL + '/images/resume.pdf'} download>
                     <span> Edwin Alban - MERN</span>
                 </a>
             </p>
             <br></br>
-            <p className="content is medium">Proficiencies:</p>
-            <ul>
+            <p className="content is-medium has-text-weight-bold">Proficiencies:</p>
+            <ul className="has-text-weight-semibold">
                 <li>React</li>
                 <li>MongoDB</li>
                 <li>Express</li>

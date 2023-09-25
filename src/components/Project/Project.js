@@ -20,7 +20,7 @@ export default function Project(props) {
                             </button>
                         </div>
                         <div className="card-image">
-                            <a href={project.deployed}  target="blank" rel="noopener noreferrer">
+                            <a href={project.deployed} target="blank" rel="noopener noreferrer">
                                 <figure className="image is-4by3">
                                     <img src={process.env.PUBLIC_URL + project.image} alt="Screenshot of App" />
                                 </figure>
@@ -28,8 +28,7 @@ export default function Project(props) {
                         </div>
                     </div>
                 </div>
-            ))
-            }
+            ))}
         </div >
     )
 };

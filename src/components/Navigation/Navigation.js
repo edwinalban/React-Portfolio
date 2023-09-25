@@ -1,9 +1,10 @@
 import React from "react";
+import "./Navigation.css";
 
 export default function Navigation(props) {
     const links = ["About", "Portfolio", "Contact", "Resume"]
     return (
-        <div className="tabs is-right">
+        <div className="tabs is-right has-text-weight-bold is-responsive">
             <ul>
                 {links.map((link) => (
                     <li className={props.currentView === link ? "nav-item is-active" : "nav-item"} key={link}>

@@ -50,7 +50,7 @@ const projects = [
 export default function Portfolio() {
     return (
         <div>
-            <p className="content is-medium">Portfolio</p>
+            <p className="content is-medium has-text-weight-bold">Portfolio</p>
             <br></br>
             <br></br>
 

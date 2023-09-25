@@ -4,6 +4,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import Resume from "../Resume/Resume";
 import Navigation from "../Navigation/Navigation";
+import "./Header.css";
 
 export default function Header() {
     const [currentView, setCurrentView] = useState("");
@@ -29,21 +30,23 @@ export default function Header() {
     }
 
     return (
-        <>
-            <nav className="navbar is-flex" role="navigation" aria-label="main navigation">
+        <div className="container">
+            <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <p className="navbar-item content is-large">
+                    <p className="navbar-item content is-large has-text-weight-bold">
                         Edwin Alban
                     </p>
                 </div>
             </nav>
-                <Navigation
-                    currentView={currentView}
-                    setCurrentView={setCurrentView}
-                />           
+            <Navigation
+                currentView={currentView}
+                setCurrentView={setCurrentView}
+
+            />
+
             <main>
                 <div>{renderView(currentView)}</div>
             </main>
-        </>
+        </div>
     )
 };

@@ -1,4 +1,8 @@
 .github {
     border: none;
-    background-color: white;
+    background-color: #CED4DA;
+}
+
+.card-header-title {
+    background-color: #CED4DA;
 }

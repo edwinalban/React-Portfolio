@@ -1,4 +1,5 @@
 import React, { useState, } from "react";
+import "./Contact.css";
 import validateEmail from "../../utils/validateEmail";
 
 export default function Contact() {
@@ -66,8 +67,8 @@ export default function Contact() {
     }
 
     return (
-        <>
-            <p className="has-text-centered">If you would like to contact me, please fill out the form below and I will be in touch soon!</p>
+        <section>
+            <p className="has-text-centered has-text-weight-semibold">If you would like to contact me, please fill out the form below and I will be in touch soon!</p>
             <div className="field">
                 <label className="label">Name</label>
                 <div className="control">
@@ -85,7 +86,7 @@ export default function Contact() {
 
             {nameError && (
                 <div>
-                    <p className="has-text-danger">{nameError}</p>
+                    <p className="is-italic has-text-weight-bold">{nameError}</p>
                 </div>
             )}
 
@@ -106,7 +107,7 @@ export default function Contact() {
 
             {emailError && (
                 <div>
-                    <p className="has-text-danger">{emailError}</p>
+                    <p className="is-italic has-text-weight-bold">{emailError}</p>
                 </div>
             )}
 
@@ -126,7 +127,7 @@ export default function Contact() {
 
             {messageError && (
                 <div>
-                    <p className="has-text-danger">{messageError}</p>
+                    <p className="is-italic has-text-weight-bold">{messageError}</p>
                 </div>
             )}
 
@@ -135,6 +136,6 @@ export default function Contact() {
                 onClick={handleSubmit}>
                 Submit
             </button>
-        </>
+        </section>
     )
 };
