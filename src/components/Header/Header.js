@@ -6,7 +6,7 @@ import Resume from "../Resume/Resume";
 import Navigation from "../Navigation/Navigation";
 
 export default function Header() {
-    const [currentView, setCurrentView] = useState("About");
+    const [currentView, setCurrentView] = useState("");
 
     const renderView = () => {
 
@@ -20,11 +20,11 @@ export default function Header() {
             case "Contact":
                 return <Contact />;
 
-            // case "Resume":
-            //     return <Resume />;
+            case "Resume":
+                return <Resume />;
 
-            // default:
-            //     return <About />;
+            default:
+                return <About />;
         }
     }
 
