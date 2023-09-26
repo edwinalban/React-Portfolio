@@ -3,3 +3,7 @@
     padding-bottom: 2em;
     min-height: 100vh;
 }
+
+main {
+    padding: 0 10vw;
+}
