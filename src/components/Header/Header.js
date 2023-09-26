@@ -30,7 +30,7 @@ export default function Header() {
     }
 
     return (
-        <div className="container">
+        <div className="main-container">
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
                     <p className="navbar-item content is-large has-text-weight-bold">

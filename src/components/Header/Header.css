@@ -1,5 +1,5 @@
-.container {
-    margin: 0;
+.main-container {
+    margin: 0 0 0 0vw;
     padding-bottom: 2em;
     min-height: 100vh;
 }
