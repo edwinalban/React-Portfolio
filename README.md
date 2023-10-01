@@ -21,6 +21,8 @@ No installation necessary.
 
 In order to use view the application, click the link below.
 
+https://edwinalban.github.io/React-Portfolio/
+
 ![alt text](public/images/Screenshot.png)
 
 ## Tests
