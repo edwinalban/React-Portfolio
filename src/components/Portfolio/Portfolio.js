@@ -39,10 +39,10 @@ const projects = [
         icon: "/images/github-mark.png"
     },
     {
-        title: "Day Planner",
-        image: "/images/day-planner.png",
-        repo: "https://github.com/edwinalban/Day-Planner",
-        deployed: "https://edwinalban.github.io/Day-Planner/",
+        title: "Mt Hermon Cleaning Schedule",
+        image: "/images/mt-hermon.png",
+        repo: "https://github.com/edwinalban/Mt-Hermon-Room-Manager",
+        deployed: "https://still-caverns-65052-3e7b82029131.herokuapp.com/",
         icon: "/images/github-mark.png"
     }
 ];
