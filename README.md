@@ -5,21 +5,27 @@ Creates a portfolio for housing projects and showcasing deployed apps.
 
 ## Description
 
-I built this project in order to practice using React components to build a front end for a portfolio. I learned about React components, mapping properties of objects, and how to build a front end application that does not require reloading.
+I built this project in order to practice using React components to build a front end for a portfolio. I learned about React components, mapping properties of objects, and how to build a single-page, front end application that does not require reloading.
+
+This single-page application solves multiple problems. Page load speed is faster due to asynchronous communication, which improves overall user experience and reduces the server load when compared with a multi-page application. The page will not require a full reload, but will instead loan once and only update contect that has changed with subsequent interactions. The application will also perform well with various devices as it is responsive and adaptive.
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Technologies Used](#installation)
 - [Usage](#usage)
 - [Tests](#tests)
 
-## Installation
+## Technologies Used
 
-No installation necessary.
+* React
+* Bulma (CSS Framework)
+* Javascript
+* HTML
+* CSS
 
 ## Usage
 
-In order to use view the application, click the link below.
+In order to use/view the application, click the link below.
 
 https://edwinalban.github.io/React-Portfolio/
 
