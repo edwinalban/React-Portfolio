@@ -7,7 +7,7 @@ Creates a portfolio for housing projects and showcasing deployed apps.
 
 I built this project in order to practice using React components to build a front end for a portfolio. I learned about React components, mapping properties of objects, and how to build a single-page, front end application that does not require reloading.
 
-This single-page application solves multiple problems. Page load speed is faster due to asynchronous communication, which improves overall user experience and reduces the server load when compared with a multi-page application. The page will not require a full reload, but will instead loan once and only update contect that has changed with subsequent interactions. The application will also perform well with various devices as it is responsive and adaptive.
+This single-page application solves multiple problems. Page load speed is faster due to asynchronous communication, which improves overall user experience and reduces the server load when compared with a multi-page application. The page will not require a full reload, but will instead load once and only update content that has changed with subsequent interactions. The application will also perform well with various devices as it is responsive and adaptive.
 
 ## Table of Contents
 
