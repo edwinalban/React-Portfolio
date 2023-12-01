@@ -12,7 +12,7 @@ export default function Resume() {
                 <p className="content is-large has-text-centered has-text-weight-bold">Resume</p>
                 <p className="has-text-weight-semibold">
                     Click to download my resume:
-                    <a href={process.env.PUBLIC_URL + '/images/resume.pdf'} download>
+                    <a href='/React-Portfolio/images/Resume.pdf' download>
                         <span> Edwin Alban - MERN</span>
                     </a>
                 </p>
