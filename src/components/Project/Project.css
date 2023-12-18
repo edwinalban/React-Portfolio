@@ -6,3 +6,23 @@
 .card-header-title {
     background-color: #CED4DA;
 }
+
+.expandable {
+    max-height: 3em;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height .5s;
+}
+
+.expandable.expanded {
+    transition: max-height 2s ease-in-out;
+    max-height: 27em;
+}
+
+.more {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0 10px;
+    text-align: end;
+}

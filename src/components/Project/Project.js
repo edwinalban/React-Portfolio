@@ -1,6 +1,19 @@
 import React from "react";
 import "./Project.css";
 
+function toggleDescription(e) {
+    const moreLink = e.target;
+    const card = moreLink.closest('.card')
+
+    if (card) {
+        const description = card.querySelector('.expandable');
+        if (description) {
+            description.classList.toggle('expanded');
+            moreLink.textContent = description.classList.contains('expanded') ? "Less" : "More...";
+        }
+    }
+};
+
 export default function Project(props) {
     return (
         <div className="columns is-flex-wrap-wrap is-flex-direction-row">
@@ -26,6 +39,10 @@ export default function Project(props) {
                                 </figure>
                             </a>
                         </div>
+                        <div className="expandable">
+                            {project.description}
+                        </div>
+                        <p className="more" onClick={toggleDescription}>More...</p>
                     </div>
                 </div>
             ))}
